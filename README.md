@@ -1,1 +1,2 @@
 # ExampleWPF
+## Используется .Net Framework
