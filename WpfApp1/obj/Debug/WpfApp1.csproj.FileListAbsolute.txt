@@ -1,0 +1,17 @@
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\View\MainWindow.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\View\WindowLayout.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\View\MainWindow.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfApp1\obj\Debug\View\WindowLayout.baml

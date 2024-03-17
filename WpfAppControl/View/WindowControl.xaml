@@ -1,0 +1,163 @@
+﻿<Window x:Class="WpfAppControl.View.WindowControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppControl.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="WindowControl" Height="800" Width="1000">
+    <Grid x:Name="MyGridView">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical">
+            <TextBlock 
+                Text="XAML" 
+                HorizontalAlignment="Center"
+                FontWeight="Bold"/>
+            <Button x:Name="BaseButton" 
+                    Height="40" Width="100" Margin="10"
+                    Click="BaseButton_Click">
+                <Button.ToolTip>
+                    <ToolTip Background="#60AA4030" 
+                             Width="150" Height="170"
+                             HasDropShadow="False"
+                             Placement="Relative"
+                             HorizontalOffset="20"
+                             VerticalOffset="30">
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="/Images/microscope.png"/>
+                            <TextBlock Text="Посмотри сюда"/>
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+                <Button.Content>
+                    <Button x:Name="buttonInButton"
+                            Content="Button" 
+                            Click="buttonInButton_Click"/>
+                </Button.Content>
+            </Button>
+            <Button 
+                Margin="10 0 10 10"
+                MouseEnter="Button_MouseEnter">
+                <StackPanel>
+                    <TextBlock Text="Набор кнопок"/>
+                    <Button Content="1" 
+                            HorizontalContentAlignment="Left"
+                            Padding="5"
+                            Background="Aqua" 
+                            Margin="5 5 5 2.5"/>
+                    <Button Content="2" 
+                            Background="Bisque" 
+                            Margin="5 2.5 5 2.5"
+                            Padding="10 0 0 0"/>
+                    <Button Content="3" Background="Blue" Margin="5 2.5 5 5"/>
+                </StackPanel>
+            </Button>
+            <Popup x:Name="buttonPopur"
+                   Placement="Mouse"
+                   MaxWidth="100"
+                   AllowsTransparency="True"
+                   StaysOpen="False">
+                <TextBlock 
+                    TextWrapping="Wrap" 
+                    Background="Gold"
+                    Opacity="0.5">
+                    Кнопки внутри нажимать бесполезно :)
+                </TextBlock>
+            </Popup>
+            <CheckBox x:Name="checkBoxState"
+                      Content="Неопределенное состояние"
+                      IsThreeState="True"
+                      IsChecked="{x:Null}"
+                      MinHeight="25"
+                      MinWidth="100"
+                      VerticalContentAlignment="Center"
+                      Background="Aqua"
+                      Checked="checkBoxState_Checked"
+                      Unchecked="checkBoxState_Unchecked"
+                      Indeterminate="checkBoxState_Indeterminate"
+            />
+            <RadioButton GroupName="1" 
+                         Content="11111" 
+                         Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="1" 
+                         Content="12221"
+                         Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="2" 
+                         Content="22222"
+                         Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="2" 
+                         Content="23332"
+                         Checked="RadioButton_Checked"
+                         ToolTip="Подсказка"
+                         ToolTipService.Placement="Mouse">
+            </RadioButton>
+            <TextBlock LineHeight="25">
+                <Run FontWeight="Bold" FontSize="14">
+                    Я
+                </Run>
+                <Run Foreground="Red" 
+                     TextDecorations="Strikethrough">
+                    не знаю
+                </Run>
+                <LineBreak/>
+                <Run FontSize="18"
+                     FontFamily="Arial"
+                     FontStretch="UltraExpanded">
+                    Нет, я знаю!
+                </Run>
+            </TextBlock>
+            <TextBlock x:Name="textBlockShowEnter"
+                       TextWrapping="Wrap"
+                       Height="70"
+                       Width="100"
+                       TextAlignment="Right">
+                Данный текст переносится на новую строку автоматически
+            </TextBlock>
+            <Label
+                Content="_Enter message:"
+                Margin="5"
+                Target="{Binding ElementName=textBoxExample}"/>
+            <TextBox x:Name="textBoxExample"
+                Height="100"
+                Width="100"
+                HorizontalAlignment="Left"
+                TextWrapping="Wrap"
+                VerticalScrollBarVisibility="Auto"
+                AcceptsReturn="True"
+                AcceptsTab="True"
+                SpellCheck.IsEnabled="True"
+                Language="ru-ru"
+                TextChanged="TextBox_TextChanged"
+                />
+        </StackPanel>
+        <Button x:Name="buttonSelectedShow"
+            Grid.Row="1"
+            Content="OK"
+            MinHeight="25"
+            MinWidth="50"
+            Margin="10"
+            HorizontalAlignment="Left"
+            IsDefault="True"
+            Click="buttonSelectedShow_Click"
+        />
+        <Button x:Name="buttonClose"
+            Grid.Row="1"
+            Content="Close"
+            MinHeight="25"
+            MinWidth="50"
+            Margin="10"
+            HorizontalAlignment="Right"
+            IsCancel="True"
+            Click="buttonClose_Click"
+        />
+
+    </Grid>
+</Window>
