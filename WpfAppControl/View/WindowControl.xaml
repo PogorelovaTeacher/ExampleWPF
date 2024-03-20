@@ -68,7 +68,7 @@
                 <TextBlock 
                     TextWrapping="Wrap" 
                     Background="Gold"
-                    Opacity="0.5">
+                    >
                     Кнопки внутри нажимать бесполезно :)
                 </TextBlock>
             </Popup>
@@ -99,21 +99,10 @@
                          ToolTip="Подсказка"
                          ToolTipService.Placement="Mouse">
             </RadioButton>
-            <TextBlock LineHeight="25">
-                <Run FontWeight="Bold" FontSize="14">
-                    Я
-                </Run>
-                <Run Foreground="Red" 
-                     TextDecorations="Strikethrough">
-                    не знаю
-                </Run>
-                <LineBreak/>
-                <Run FontSize="18"
+            <TextBlock LineHeight="25"><Run FontWeight="Bold" FontSize="14" Text="Я"/><Run Text=" "/><Run Foreground="Red" 
+                     TextDecorations="Strikethrough" Text="не знаю"/><LineBreak/><Run FontSize="18"
                      FontFamily="Arial"
-                     FontStretch="UltraExpanded">
-                    Нет, я знаю!
-                </Run>
-            </TextBlock>
+                     FontStretch="UltraExpanded" Text="Нет, я знаю!"/></TextBlock>
             <TextBlock x:Name="textBlockShowEnter"
                        TextWrapping="Wrap"
                        Height="70"

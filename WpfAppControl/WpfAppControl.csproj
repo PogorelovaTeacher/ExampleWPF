@@ -55,11 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Person.cs" />
     <Compile Include="View\WindowControl.xaml.cs">
       <DependentUpon>WindowControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\WindowLayout.xaml.cs">
       <DependentUpon>WindowLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WindowListBox.xaml.cs">
+      <DependentUpon>WindowListBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\WindowUniformGrid.xaml.cs">
       <DependentUpon>WindowUniformGrid.xaml</DependentUpon>
@@ -81,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\WindowLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WindowListBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
