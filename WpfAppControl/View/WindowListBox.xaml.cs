@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfAppControl.Classes;
 
 namespace WpfAppControl.View
 {
@@ -26,7 +27,14 @@ namespace WpfAppControl.View
         {
             InitializeComponent();
             FillCollection(listCollection, streamCollection);
-            listBoxAutofill.ItemsSource = listCollection;   
+            listBoxAutofill.ItemsSource = listCollection;
+            ListViewPerson.ItemsSource = new List<Person>
+            {
+                new Person {Name="Алиса", Age=30},
+                new Person {Name="Миша", Age=40},
+                new Person {Name="Дима", Age=23}
+            };
+            comboBoxName.IsEditable = true;
         }
 
         private void FillCollection(List<string> list, StreamReader stream)

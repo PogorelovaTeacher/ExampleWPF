@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
         xmlns:local="clr-namespace:WpfAppControl.View"
         xmlns:cc="clr-namespace:WpfAppControl.Classes"
         mc:Ignorable="d"
-        Title="WindowListBox" Height="450" Width="800">
+        Title="WindowListBox and ListView" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -20,6 +21,7 @@
         <ListBox>
             <sys:String>Tom</sys:String>
             <sys:String>Alice</sys:String>
+            <sys:String>Bob</sys:String>
         </ListBox>
         <StackPanel
             Grid.Row="1">
@@ -38,6 +40,38 @@
             <Button x:Name="buttonDel"
                     Content="Delete"
                     Click="buttonDel_Click"/>
+            <ComboBox x:Name="comboBoxName">
+                <sys:String>Tomas</sys:String>
+                <sys:String>Alik</sys:String>
+                <sys:String>Bobik</sys:String>
+            </ComboBox>
+             
+        </StackPanel>
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1">
+            <ListView x:Name="ListViewPerson"
+                      ItemsSource="{DynamicResource ResourceKey=person}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn 
+                            Header="Имя"
+                            DisplayMemberBinding="{Binding Path=Name}"/>
+                        <GridViewColumn 
+                            Header="Возраст"
+                            DisplayMemberBinding="{Binding Path=Age}"/>
+                    </GridView>
+                </ListView.View>
+                <ListView.Resources>
+                    <col:ArrayList x:Key="person">
+                        <cc:Person Name="Mary" Age="21"/>
+                        <cc:Person Name="Gleb" Age="30"/>
+                        <cc:Person Name="Ann" Age="25"/>
+                    </col:ArrayList>
+                    
+                </ListView.Resources>
+
+            </ListView>
         </StackPanel>
         
     </Grid>
