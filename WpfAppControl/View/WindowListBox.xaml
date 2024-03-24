@@ -68,11 +68,9 @@
                         <cc:Person Name="Gleb" Age="30"/>
                         <cc:Person Name="Ann" Age="25"/>
                     </col:ArrayList>
-                    
                 </ListView.Resources>
-
             </ListView>
+            
         </StackPanel>
-        
     </Grid>
 </Window>

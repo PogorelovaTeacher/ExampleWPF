@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfAppControl\App.xaml
-51272610632
+6961325776
 
-111395638571
+121682711175
 13-1310406943
-View\MainWindow.xaml;View\WindowControl.xaml;View\WindowLayout.xaml;View\WindowListBox.xaml;View\WindowUniformGrid.xaml;
+View\MainWindow.xaml;View\WindowTreeView.xaml;View\WindowControl.xaml;View\WindowLayout.xaml;View\WindowListBox.xaml;View\WindowUniformGrid.xaml;
 
-False
+True
 

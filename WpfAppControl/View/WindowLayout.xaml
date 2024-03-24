@@ -102,10 +102,8 @@
                 x:Name="ButtonChangeColor"
                 Content="Change color"
                 Canvas.Left="30"
-                Canvas.Top="50"
-                Click="ButtonChangeColor_Click" 
-                HorizontalAlignment="Left" 
-                VerticalAlignment="Center"/>
+                Canvas.Top="30"
+                Click="ButtonChangeColor_Click"/>
         </Canvas>
     </Grid>
 </Window>

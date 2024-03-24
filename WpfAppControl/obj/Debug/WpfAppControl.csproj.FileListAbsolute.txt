@@ -22,3 +22,5 @@ C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfApp
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfAppControl\obj\Debug\View\WindowControl.baml
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfAppControl\obj\Debug\View\WindowListBox.g.cs
 C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfAppControl\obj\Debug\View\WindowListBox.baml
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfAppControl\obj\Debug\View\WindowTreeView.g.cs
+C:\Users\Марина\Documents\Личные документы\AppCSharp\WpfAppExample\WpfAppControl\obj\Debug\View\WindowTreeView.baml
